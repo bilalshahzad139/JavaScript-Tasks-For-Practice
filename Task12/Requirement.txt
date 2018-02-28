@@ -1,0 +1,3 @@
+- Table is showing Semester No, Textbox to get GPA, Checkbox for selection
+- User may mark a checkbox "checked" if he wants to enter GPA for a semester.
+- When checkbox is checked, textbox should become normal otherwise disabled.

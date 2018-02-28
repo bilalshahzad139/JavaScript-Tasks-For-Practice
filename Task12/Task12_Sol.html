@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Task12 Solution</title>
+<script type="text/javascript">
+	function Main(){
+	
+		
+	}//end of Main
+	
+	function chkClicked(obj){
+		
+		var relatedTextBoxId = "";
+		
+		//this is not the best approach but just one approach
+		
+		if(obj.id == "chk1"){
+			relatedTextBoxId = "txt1";
+		}
+		else if(obj.id == "chk2"){
+			relatedTextBoxId = "txt2";
+		}
+		else if(obj.id == "chk3"){
+			relatedTextBoxId = "txt3";
+		}
+		else if(obj.id == "chk4"){
+			relatedTextBoxId = "txt4";
+		}
+		else if(obj.id == "chk5"){
+			relatedTextBoxId = "txt5";
+		}
+		else if(obj.id == "chk6"){
+			relatedTextBoxId = "txt6";
+		}
+		else if(obj.id == "chk7"){
+			relatedTextBoxId = "txt7";
+		}
+		else if(obj.id == "chk8"){
+			relatedTextBoxId = "txt8";
+		}
+		
+		if(relatedTextBoxId != "")
+		{
+			var elem = document.getElementById(relatedTextBoxId);
+			if(obj.checked == true)
+			{
+				elem.removeAttribute('disabled');
+			}
+			else {
+				elem.value = "";
+				elem.setAttribute('disabled',true);
+			}
+		}
+	}
+	
+</script>
+
+</head>
+<body onload="Main();">
+	<table border="1px">
+		<thead>
+			<tr>
+				<td>Semester No</td>
+				<td>GPA</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td><input type="text" id="txt1" disabled></td>
+				<td><input type="checkbox" id="chk1" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input type="text" id="txt2" disabled></td>
+				<td><input type="checkbox" id="chk2" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><input type="text" id="txt3" disabled></td>
+				<td><input type="checkbox" id="chk3" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><input type="text" id="txt4" disabled></td>
+				<td><input type="checkbox" id="chk4" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><input type="text" id="txt5" disabled></td>
+				<td><input type="checkbox" id="chk5" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><input type="text" id="txt6" disabled></td>
+				<td><input type="checkbox" id="chk6" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td><input type="text" id="txt7" disabled></td>
+				<td><input type="checkbox" id="chk7" onclick="chkClicked(this);"></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td><input type="text" id="txt8" disabled></td>
+				<td><input type="checkbox" id="chk8" onclick="chkClicked(this);"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
