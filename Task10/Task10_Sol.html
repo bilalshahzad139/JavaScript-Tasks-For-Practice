@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Task10 Solution</title>
+<script type="text/javascript">
+	function Main(){
+	
+	var array1 = ["Pak", "Ind","Lhr","Isb","PHYsics"]
+	
+	//Converting Array to a string and showing it on page
+	document.getElementById('data').innerText = array1.toString();
+	
+	var btn = document.getElementById('btnExecute');
+		
+		btn.onclick = function(){
+			
+			var array2 = [];
+			
+			for(var i=0;i<array1.length;i++)
+			{
+				if(i%2== 0) //even
+				{
+					array2.push(array1[i].toLowerCase());
+				}
+				else { //odd
+					array2.push(array1[i].toUpperCase());
+				}
+			}
+
+			document.getElementById('data2').innerText = array2.toString();			
+		};//end of onclick
+		
+	}//end of Main
+	
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	<h1 id='data'></h1>
+	<button id="btnExecute">Execute</button> <br>
+	<h1 id='data2'></h1>
+</body>
+</html>
