@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Task11 Solution</title>
+<script type="text/javascript">
+	function Main(){
+	
+		var arr = [1,5,"ABC",true,10];
+		arr.push(20);
+				
+		//Task a 
+		console.log("Task a------------------Length is:" + arr.length);
+		IterateArrayUsingFor(arr);
+		
+		//Task b
+		console.log("Task b------------------Length is:" + arr.length);
+		IterateArrayUsingForIn(arr);
+		
+		//Task c
+		arr["ID"] = 1;
+		arr["Name"]= "Bilal";
+		
+		
+		//Task d
+		console.log("Task d------------------Length is:" + arr.length);
+		
+		IterateArrayUsingFor(arr);
+		IterateArrayUsingForIn(arr);
+	
+		
+	}//end of Main
+	
+	function IterateArrayUsingFor(arr){
+		
+		console.log("Iterate using for loop---------");	
+		for(var i=0;i<arr.length;i++)
+		{
+			console.log("Index:"+ i + " and Value:" + arr[i]);
+		}
+	}
+	
+	function IterateArrayUsingForIn(arr){
+		console.log("Iterate using for-in loop---------");	
+		for(var key in arr)
+		{
+			console.log("Key:"+ key + " and Value:" + arr[key]);
+		}
+	}
+</script>
+
+</head>
+<body onload="Main();">
+	
+</body>
+</html>
