@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Task6</title>
+<script type="text/javascript">
+	function Main(){
+	
+		var btn = document.getElementById("btnShow");
+		btn.onclick = function (){	
+			alert("button is clicked");
+		};
+		
+		//OR
+		
+		/*
+		btn.onclick =somefunction;
+		*/
+	
+	}
+	
+	function somefunction(){
+		alert("button is clicked");
+	}
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	<button id="btnShow">Show</button>
+	<!-- Bind event on following button inline -->
+	<button id="btnShow2" onclick="return somefunction();">Show2</button>
+</body>
+</html>
