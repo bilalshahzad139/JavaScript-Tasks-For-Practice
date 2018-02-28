@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Task5</title>
+<script type="text/javascript">
+	function Main(){
+	
+	
+	var name = prompt("Please provide your name");
+	//Following line will be executed when you will proide data in prompt
+	
+	//Find element with id=heading1
+	var e = document.getElementById("heading1");
+	e.innerText  = name;
+	
+	//OR
+	
+	/*
+	ocument.getElementById("heading1").innerText  = name;
+	*/
+	
+	}
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	<h1 id="heading1"></h1>
+</body>
+</html>
