@@ -1,0 +1,11 @@
+Provide different inputs to following functions in given code and see what they returns (you may use console.log to print output)
+------------------
+
+Number
+parseInt
+parseFloat
+
+For example
+
+var a = Number("123a");
+console.log(a);
