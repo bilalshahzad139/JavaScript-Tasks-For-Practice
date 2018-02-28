@@ -1,0 +1,1 @@
+ Write event handle for click of button (id=btnAdd) and show sum of entered numbers.

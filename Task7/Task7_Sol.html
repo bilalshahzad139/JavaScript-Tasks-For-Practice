@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Task7 Solution</title>
+<script type="text/javascript">
+	function Main(){
+	
+		var btn = document.getElementById("btnAdd");
+		btn.onclick = function (){	
+			var val1 = document.getElementById('txtFirst').value;
+			var val2 = document.getElementById('txtSecond').value;
+			
+			val1 = Number(val1);
+			val2 = Number(val2);
+			
+			var result = val1 + val2;
+			debugger;
+			
+			if(isNaN(result)){
+				//Some input problem				
+				alert('Input should be valid numbers');
+			}
+			else {
+				
+				document.getElementById('txtResult').value = result;
+			}
+		};
+		
+		
+	
+	}
+	
+	
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	First:<input type="text" id="txtFirst"> <br>
+	Second:<input type="text" id="txtSecond"> <br>
+	<button id="btnAdd">Add</button> <br>
+	Result:<input type="text" id="txtResult">
+</body>
+</html>
