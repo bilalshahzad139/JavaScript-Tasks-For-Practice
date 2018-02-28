@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Task8 Solution</title>
+<script type="text/javascript">
+	function Main(){
+	
+		var btn = document.getElementById('btnMe');
+		
+		btn.onclick = function(){
+		
+			
+			setTimeout("alert('hello')",2000);
+			
+			//OR
+			
+			/*
+			setTimeout(function(){
+						alert('hello');
+					}, 2000);
+			
+			*/
+			
+			
+			//OR
+			
+			/*
+			setTimeout(showalert,2000);
+			*/
+		};
+	}
+	
+	function showalert(){
+		alert('hello');	
+	
+	}
+	
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	<button id="btnMe">Click Me</button> <br>
+</body>
+</html>
