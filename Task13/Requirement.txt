@@ -1,0 +1,3 @@
+Write function to calculate CGPA of a student. When user clicks button (id=btnCalculate), CGPA should be calculated using GPAs provided. If a textbox is enabled and user has not provided valid value (0-4) in it, you should show an error message to user in alert box.
+
+- Calculated GPA should be shown in span element (id=spCGPA) 
